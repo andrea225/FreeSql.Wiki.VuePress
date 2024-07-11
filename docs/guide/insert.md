@@ -63,7 +63,7 @@ var t2 = fsql.Insert(items).ExecuteAffrows();
 //(?Clicks8, ?Title8, ?CreateTime8), (?Clicks9, ?Title9, ?CreateTime9)
 ```
 
-> 解决了 SqlServer 批量添加容易导致的错误：传入的请求具有过多的参数。该服务器支持最多 2100 个参数。请减少参数的数目，然后重新发送该请求。
+> 解决了 SqlServer 批量添加容易导致的错误：传入的请求具有过多的参数。该数据库支持最多 2100 个参数。请减少参数的数目，然后重新发送该请求。
 
 > 原理为拆成多个包用事务执行；
 
